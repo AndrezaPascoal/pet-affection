@@ -1,0 +1,401 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap'); /*font-family: 'Cormorant Garamond', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); /*font-family: 'Fredoka One', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap'); /*font-family: 'Shrikhand', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap'); /*font-family: 'Henny Penny', cursive;*/
+*{
+    margin: 0;
+    padding: 0;
+}
+ 
+:root{
+    --cor1: #F29BE4;
+    --cor2: #2291F2;
+    --cor3: #14548C;
+    --cor4: #DCF28D;
+    --cor5: #F2D0A7;
+
+    --fonte-destaque1: Cormorant Garamond, serif;
+    --fonte-destaque2: Fredoka One, cursive;
+    --fonte-destaque3: Shrikhand, cursive;
+    --fonte-destaque4: Henny Penny, cursive;
+}
+a,
+a:hover,
+a:active,
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #F29BE4;
+}
+
+body{
+    
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    background-size: 400% 400%;
+   position: relative;
+   animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change {
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+  }
+
+hr {
+    border: none;
+    background:linear-gradient( -45deg, var(--cor3), var(--cor2), var(--cor4), var(--cor1), var(--cor5) );
+    height: 5px;
+    width: 200px;
+    margin: 20px  auto;
+    border-radius: 100%;
+}
+
+P {
+    line-height: 21.82PX ;
+    padding: 0 10PX;
+
+}
+
+.menu-bg{
+    background-color: var(--cor2);
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.menu__logo{
+    margin: 10px;
+}
+
+.nav__list{
+    display: flex;
+    flex-wrap: wrap;                                 
+    list-style: none;
+}
+
+.nav__link{
+    padding: 20px 10px;
+    font-family: var(--fonte-destaque2);
+}
+
+.nav__link:hover{
+    text-shadow: 0 0 10px #800e6d;
+}
+
+
+
+.container-img {
+    display: flex;
+    background-image: url(midia/cachorros.dog.png);
+    background-size: 100% 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    border-radius: 15px;
+    height: 380px; 
+}
+
+.intro {
+    font-family: var(--fonte-destaque1);
+    font-size: 2.5em;
+    color:black; 
+    text-align:center;
+    margin: 100px auto;
+    max-width: 400px;
+}
+
+
+
+/****************************************************************  SOBRE ************************************************************/
+
+.section__titulo{
+         text-align: center;
+         font-family: var(--fonte-destaque4);
+         color: var(--cor1);
+         font-size: 3em;
+         margin-bottom: 10px;
+}
+
+.somos{
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+
+.somos-c{
+    display: flex;
+    flex-wrap: wrap;
+    ;
+    
+    
+}
+
+.moça-dog:hover{
+    transform: rotate(20deg);
+}
+
+.somos-c__texto{
+    flex: 6 1 160px;  /* fex-grow = 6   flex-shrink = 1   flex-basis = 160px*/
+    color: aliceblue;
+    margin-top: 5rem;
+}
+
+.somos-c__img{
+    display: block;
+    max-width: 100%;
+    padding-left: 0;
+    margin-top: 1.5rem;  
+}
+
+
+/**************************************************************** Idade *************************************************************/
+
+.idade__dog-c{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.idade{
+    width: 280px;
+    margin: 0 20px;
+}
+
+.filhote__img:hover{
+    transform: rotate(20deg);
+}
+.dog-titulo{
+    font-family: var(--fonte-destaque2);
+    font-size: 1.5rem;
+    color: #F2D0A7;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+
+.dog-texto{
+    font-family:Arial, Helvetica, sans-serif ;
+    color: white ;
+    text-align: center;
+}
+
+/*************************************************************** porte ********************************************************************/
+
+.porte-tamanho{
+    background-color: #2291F2;
+}
+
+.porte{
+    width: 280px;
+    margin: 0 20px;
+    padding-bottom: 25px;
+}
+
+.filhote__2img:hover{
+    transform: translateY(-10px);
+}
+
+.porte__dog-c{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+/*********************************************************** Lista enxoval ******************************************************************/
+
+.lista{
+    background-image: linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+
+@keyframes change {
+    0%{
+      background-position: 0 50%;
+    }
+    50%{
+      background-position: 100% 50%;
+    }
+    100%{
+      background-position: 0 50%;
+    }
+}
+
+.lista__enxoval-c{
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lista__dog{
+    width: 290px;
+    margin: 10px;
+    border: 2px solid var(--cor4);
+}
+
+.dog__titulo{
+   font-family: var(--fonte-destaque1); 
+   font-size: 2rem;
+   color: #DCF28D;
+   text-align: center;
+}
+
+.lista__lista{
+    max-width: 195px;
+    margin: 0 auto;
+}
+
+.lista__item{
+    font-style: italic; 
+    background-color:#F29BE4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+/******************************************************************************************************************************************/
+
+.raças-curiosidades{
+    
+    background-color: #DCF28D;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 81px;
+}
+
+.Raças{
+    max-width: 290px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+}
+
+.raças-titulo{
+    font-family: var(--fonte-destaque3);
+    font-size: 1.7rem;
+    color: var(--cor2);
+    margin-bottom: 5px;
+    margin-left: 10px;
+    width: 100%; 
+}
+
+/********************************************************************************************************************/
+
+.footer{
+    position: relative;
+    width: 100%;
+    background-color: var(--cor2);
+    min-height: 100px;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+
+footer .rodape-icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;  
+}
+.rodape-icon li{
+    list-style: none;
+}
+
+
+
+footer .style-a li a {
+    font-size: 2em;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    
+}
+
+footer .rodape-icon :hover {
+    transform: translateY(-10px);
+}
+
+footer p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(/midia/wave.png) ; 
+    background-size: 1000px 100px;
+    
+}
+
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animate 4s linear infinite;
+    
+}
+footer .wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate_2 4s linear infinite;
+    
+}
+
+footer .wave#wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animate 3s linear infinite;
+}
+footer .wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate_2 3s linear infinite;
+    
+}
+
+@keyframes animate {
+    0%
+     {   background-position-x: 1000px;}
+
+     100%
+     {   background-position-x: 0px;}
+}
+
+@keyframes animate_2 {
+    0%
+     {   background-position-x: 0px;}
+
+     100%
+     {   background-position-x: 1000px;}
+}
